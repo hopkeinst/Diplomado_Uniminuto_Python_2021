@@ -13,4 +13,10 @@ Como mencionaba, este repositorio tendrá los ejercicios desarrollados en la cla
 
 **Listado de códigos**
 
-- [**000_HolaMundo:**](000_HolaMundo) Ejercicio básico de todo lenguaje de programación para escribir o imprimir en pantalla un mensaje que diga 'Hola Mundo' 
+- [**000_HolaMundo:**](000_HolaMundo) Ejercicio básico de todo lenguaje de programación para escribir o imprimir en pantalla un mensaje que diga 'Hola Mundo'.
+
+- [**001_HolaATodos:**](001_HolaATodos) Ejercicio básico de impresión. Aquí se incluye la posibilidad de limpiar la consola antes de mostrar cualquier cosa. En este caso se hace una diferenciación dependiendo si el sistema operativo es Windows o no, porque el comando entre Windows y UNIX es diferente. Este sirve de base para limpiar la pantalla del resto de códigos aquí colocados.
+
+- [**002_VolumenCono:**](002_VolumenCono) Aquí se busca calcular el volumen de un cono y el área de su base. Se usa la librería *math* para usar el número ***PI*** y se compara frente al valor establecido de 3.1416 como la constante.
+
+- [**003_ClasificacionDeportistasPorEdad:**](003_ClasificacionDeportistasPorEdad) Código que solicita la edad de un deportista y le dice a que categoría pertenece.
