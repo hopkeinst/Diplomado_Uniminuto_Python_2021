@@ -13,4 +13,4 @@ Como mencionaba, este repositorio tendrá los ejercicios desarrollados en la cla
 
 **Listado de códigos**
 
-- [**001_HolaMundo:**](000_HolaMundo) Ejercicio básico de todo lenguaje de programación para escribir o imprimir en pantalla un mensaje que diga 'Hola Mundo' 
+- [**000_HolaMundo:**](000_HolaMundo) Ejercicio básico de todo lenguaje de programación para escribir o imprimir en pantalla un mensaje que diga 'Hola Mundo' 
