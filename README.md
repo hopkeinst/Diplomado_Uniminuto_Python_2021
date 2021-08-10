@@ -25,6 +25,6 @@ Dudas, comentarios y demás al correo *hopkeinst@gmail.com*.
 
 
 
-***WOW*** <u>A partir de aquí procuraré usar manejo de errores en los inputs para asegurar que se ingrese un dato correcto, dentro del dominio o rango esperado, que si se va a ingresar un número sea un número y no un texto</u>
+***WOW*** <span style="text-decoration: underline">A partir de aquí procuraré usar manejo de errores en los inputs para asegurar que se ingrese un dato correcto, dentro del dominio o rango esperado, que si se va a ingresar un número sea un número y no un texto</span>
 
 - [**015_PelotaRebotante:**](015_PelotaRebotante) En este código la idea es tener una pelota que rebota al pasar el tiempo. Se tiene una altura inicial desde donde se suelta, una altura a la cual se quiere llegar y el porcentaje que va disminuyendo de la altura en cada rebote. Al final muestra el proceso como va disminuyendo en cada rebote y el total de rebotes que tuvo que hacer para alcanzar o ser menor que la altura mínima ingresada.
