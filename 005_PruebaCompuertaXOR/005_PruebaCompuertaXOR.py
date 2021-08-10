@@ -1,6 +1,5 @@
 import os
 import sys
-import math as m
 
 sistema_operativo = sys.platform
 if sistema_operativo.startswith('win'):

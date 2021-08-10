@@ -23,9 +23,41 @@ Dudas, comentarios y demás al correo *hopkeinst@gmail.com*.
 
 - [**003_ClasificacionDeportistasPorEdad:**](003_ClasificacionDeportistasPorEdad) Código que solicita la edad de un deportista y le dice a que categoría pertenece.
 
+- [**004_ClasificacionDeportistasEdad_11veces:**](004_ClasificacionDeportistasEdad_11veces)
 
+- [**005_PruebaCompuertaXOR:**](005_PruebaCompuertaXOR)
+
+- [**006_PruebaCompuertaAND:**](006_PruebaCompuertaAND)
+
+- [**007_PruebaCompuertaOR:**](007_PruebaCompuertaOR)
+
+- [**008_JuegoMultiplosyTerminados:**](008_JuegoMultiplosyTerminados)
+
+- [**009_CantidadEstudiantesPasaron:**](009_CantidadEstudiantesPasaron)
+
+- [**010_ContarParesImpares:**](010_ContarParesImpares)
+
+- [**011_AcumuladorEdadPersonas:**](011_AcumuladorEdadPersonas)
+
+- [**012_AcumuladorContadorProductos:**](012_AcumuladorContadorProductos)
+
+- [**013_DescuentoServicio:**](013_DescuentoServicio)
+
+- [**014_Teleton:**](014_Teleton)
 
 > ***WOW*** A partir de aquí procuraré usar manejo de errores en los inputs para asegurar que se ingrese un dato correcto, dentro del dominio o rango esperado, que si se va a ingresar un número sea un número y no un texto.
-Esto lo haré revisando los datos ingresados y forzando mediante `while` que se cumplan y para lso tipos de datos mediante `try-except`.
+Esto lo haré revisando los datos ingresados y forzando mediante `while` que se cumplan y para los tipos de datos mediante `try-except`.
 
 - [**015_PelotaRebotante:**](015_PelotaRebotante) En este código la idea es tener una pelota que rebota al pasar el tiempo. Se tiene una altura inicial desde donde se suelta, una altura a la cual se quiere llegar y el porcentaje que va disminuyendo de la altura en cada rebote. Al final muestra el proceso como va disminuyendo en cada rebote y el total de rebotes que tuvo que hacer para alcanzar o ser menor que la altura mínima ingresada.
+
+- [**016_TablaDeMultiplicar:**](016_TablaDeMultiplicar) En este código la idea es ingresar el número al que queremos hallar su respectiva tabla de multiplicar, luego solicita otro número que es hasta donde llegará esta tabla de multiplicar; para proceder a mostrarla.
+
+- [**017_TablaDeMultiplicarRepetitivo:**](017_TablaDeMultiplicarRepetitivo) Igual que el anterior, solo que se repite de manera cíclica pidiendo los 2 datos de entrada y mostrando la tabla de multiplicar respectiva. Si en algún momento se desea salir basta con ingresar un '0' en alguno de los 2 datos de entrada.
+
+- [**018_NumeroPrimo:**](018_NumeroPrimo) Código para revisar si un número es primo o no. Se utiliza el concepto de número primo que solo es divisible entre 1 y el mismo número; por lo cual revisa desde el número 2 hasta el número anterior al que se desea revisar y busca si es divisible por alguno de estos. Si es así, cambia el valor de una bandera y rompe el ciclo repetitivo. Luego imprime la información dependiendo del valor de la bandera.
+> Se le agrega la librería `time` para medir tiempo y luego contrastarlo contra los dos siguientes códigos y ver cual es más rápido.
+
+- [**019_NumeroPrimoOptimizado:**](019_NumeroPrimoOptimizado) Realiza la misma labor del código anterior, solamente que optimiza el límite superior del ciclo de repetición. Aquí usamos un concepto matemático que dice que los divisores de un número van hasta la raíz cuadrada de este número *(claro, si existen estos divisores)*. Se usa y se compara los tiempos frente al código anterior y da un orden de 91 veces más rápido.
+
+- [**020_NumeroPrimoOptimizadoWhile:**](020_NumeroPrimoOptimizadoWhile) Igual que los dos anteriores códigos, solo que se cambia el ciclo repetitivo `for` por un ciclo repetitivo `while` y usando la raíz cuadrada del número que se quiere revisar. Aquí se nota que es más rápido que el código 018; pero no tanto como el 019 *(esto debido al incremento hecho al final del `while` que viene optimizado en el `for`)*.
+
