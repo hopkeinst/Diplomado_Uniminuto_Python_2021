@@ -60,3 +60,4 @@ Esto lo haré revisando los datos ingresados y forzando mediante `while` que se 
 
 - [**020_NumeroPrimoOptimizadoWhile:**](020_NumeroPrimoOptimizadoWhile) Igual que los dos anteriores códigos, solo que se cambia el ciclo repetitivo `for` por un ciclo repetitivo `while` y usando la raíz cuadrada del número que se quiere revisar. Aquí se nota que es más rápido que el código 018; pero no tanto como el 019 *(esto debido al incremento hecho al final del `while` que viene optimizado en el `for`)*.
 
+- [**021_numerosAmigos_teoria1:**](021_numerosAmigos_teoria1) Código para identificar si 2 números son números amigos. Dos números son amigos cuando la suma de sus divisores son igual al otro número. O sea, si tengo los números A y B, la suma de los divisores de A es igual a B y la suma de los divisores de B es igual a A.
