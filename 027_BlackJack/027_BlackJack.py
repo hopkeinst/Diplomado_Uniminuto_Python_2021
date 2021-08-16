@@ -17,7 +17,7 @@ cartas = ["AS", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
 print("-> Inicia el jugador")
 opc = -1
 cartas_jugador = []
-cartas_jugador.append(cartas[r.randint(0, 13)])
+cartas_jugador.append(cartas[r.randint(0, 12)])
 valor_jugador = 0
 if cartas_jugador[-1] in ["J", "Q", "K"]:
 	valor_jugador += 10
@@ -36,7 +36,7 @@ while (opc != 0) and (valor_jugador <= 21):
 		print("-- ERROR -- Ingresaste un dato no entero, inténtalo de nuevo.\n")
 
 	if (opc == 1):
-		cartas_jugador.append(cartas[r.randint(0, 13)])
+		cartas_jugador.append(cartas[r.randint(0, 12)])
 		if cartas_jugador[-1] in ["J", "Q", "K"]:
 			valor_jugador += 10
 		elif cartas_jugador[-1] == "AS":
@@ -50,7 +50,7 @@ if valor_jugador <= 21:
 	cartas_crupier = []
 	valor_crupier = 0
 	opc = -1
-	cartas_crupier.append(cartas[r.randint(0, 13)])
+	cartas_crupier.append(cartas[r.randint(0, 12)])
 	if cartas_crupier[-1] in ["J", "Q", "K"]:
 		valor_crupier += 10
 	elif cartas_crupier[-1] == "AS":
@@ -60,7 +60,7 @@ if valor_jugador <= 21:
 	print("\tPrimera carta Crupier es {:s} (Acumulado: {:d})".format(cartas_crupier[-1], valor_crupier))
 
 	while (valor_crupier <= 16):
-		cartas_crupier.append(cartas[r.randint(0, 13)])
+		cartas_crupier.append(cartas[r.randint(0, 12)])
 		if cartas_crupier[-1] in ["J", "Q", "K"]:
 			valor_crupier += 10
 		elif cartas_crupier[-1] == "AS":
