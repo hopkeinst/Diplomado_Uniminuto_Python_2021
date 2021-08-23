@@ -39,4 +39,19 @@ print()
 for i in range(len(productos)):
 	print("El producto {:s} tiene {} existencias".format(productos[i], cantidades[i]))
 
+
+print("\nMÍNIMAS EXISTENCIAS")
+minimo = 0
+while minimo <= 0:
+	try:
+		minimo = int(input("Ingrese la cantidad mínima para todos los productos: "))
+		if minimo <= 0:
+			print("-- ERROR -- Ingresaste un valor menor o igual que cero.\n\tInténtelo de nuevo.\n")
+	except ValueError:
+		print("-- ERROR -- Ingresaste un valor dato no numérico (entero o con decimales).\n\tInténtelo de nuevo.\n")
+
+for i in range(len(productos)):
+	if cantidades[i] <= minimo:
+		print("El producto {:s} debe revisarse porque tiene menos de {:d} productos (actualmente {} cantidad).".format(productos[i], minimo, cantidades[i]))
+
 print()
