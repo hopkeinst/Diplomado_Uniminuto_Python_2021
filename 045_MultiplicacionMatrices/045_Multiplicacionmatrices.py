@@ -12,6 +12,7 @@ else:
 print("MULTIPLICACIÓN DE MATRICES")
 print("A continuación se realizará la multiplicación de dos matrices.\nPara esto se le solicitará la dimensión de las dos matrices (filas, columnas).\nSi cumplen la condición para la multiplicación de matrices, estas se llenarán de manera aleatoria y se realizará la operación.\n")
 
+# Primero ingresar los datos de filas y columnas de las matrices
 row1 = 0
 col1 = 0
 while row1 <= 0:
@@ -45,9 +46,11 @@ while col2 <= 0:
 	except ValueError:
 		print("-- ERROR -- Ingresaste un dato no entero.\nInténtelo de nuevo.\n")
 
-if col1 != row2:
+if col1 != row2: # Compruebo que las columnas de la primera matriz sean 
+	#  iguales a las filas de la segunda matriz
 	print("-- ERROR -- No se puede calcular la multiplicación de matrices por la condición que la cantidad de columnas de la matriz 1 debe ser igual a la cantidad de filas de la segunda matriz.\nCorra el programa de nuevo y tenga en cuenta esta condición.")
 else:
+	# Creo las matrices 1 y 2, y las relleno con datos aleatorios
 	mat1 = []
 	mat2 = []
 	for i in range(row1):
@@ -70,6 +73,10 @@ else:
 		for j in range(col2):
 			print("{:^3}".format(mat2[i][j]), end="")
 		print()
+
+	# A partir de los datos de filas de la primera matriz y columnas de 
+	#  la segunda se crea la matriz resultante de la multiplicación
+	#  y se llena inicialmente con el término NaN
 	rowR = row1
 	colR = col2
 	matR = []
@@ -78,6 +85,17 @@ else:
 		for j in range(colR):
 			rows.append(m.nan)
 		matR.append(rows)
+	# Después de llenada con los términos NaN la matriz resultante
+	#  se procede a realizar los cálculos para llenarla
+	#  esto se hace teniendo en cuenta la posición de cada elemento
+	#  en la nueva matriz: si el elemento está en la posición fila 1
+	#  columna 1, significa que es el resultado del producto escalar 
+	#  de la fila 1 de la primera matriz con la columna 1 de la segunda
+	#  matriz
+	# Para esto se usarán 3 ciclos for:
+	#  - El primero para recorrer la matriz resultante por filas
+	#  - El segundo para recorrer por columnas cada fila de la matriz resultante
+	#  - El tercero para hacer el cálculo (que es una sumatoria al final)
 	print("\nCalculo matriz resultante:")
 	for i in range(rowR):
 		for j in range(colR):
